@@ -1,0 +1,9 @@
+# 将所有 HTTP 请求重定向到 HTTPS
+http://* https://:splat 301!
+
+# 404 页面重定向
+/* /404.html 404
+
+# 确保 www 子域名重定向到主域名
+http://www.lzban8.github.io/* https://lzban8.github.io/:splat 301!
+https://www.lzban8.github.io/* https://lzban8.github.io/:splat 301! 
