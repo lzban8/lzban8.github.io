@@ -1,0 +1,19 @@
+{{ $wordCount := .WordCount }}
+{{ $readingTime := .ReadingTime }}
+
+<div class="article-heat">
+    <span class="heat-item">
+        <i class="fas fa-book-reader"></i>
+        {{ $wordCount }} 字
+    </span>
+    <span class="heat-item">
+        <i class="fas fa-clock"></i>
+        {{ $readingTime }} 分钟
+    </span>
+    {{ if .Params.views }}
+    <span class="heat-item">
+        <i class="fas fa-eye"></i>
+        {{ .Params.views }} 阅读
+    </span>
+    {{ end }}
+</div> 

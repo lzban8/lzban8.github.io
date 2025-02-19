@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: {{ .Site.BaseURL }}sitemap.xml
+
+# 禁止访问隐私政策页面
+Disallow: /privacy/
+
+# 禁止访问标签和分类的 JSON 输出
+Disallow: /tags/index.json
+Disallow: /categories/index.json 

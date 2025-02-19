@@ -1,0 +1,25 @@
+{{ if .Site.Params.share.enable }}
+<div class="share-container">
+    <div class="share-title">
+        <i class="fas fa-share-alt"></i> 分享到
+    </div>
+    <div class="share-buttons">
+        <!-- 微博 -->
+        <a href="https://service.weibo.com/share/share.php?url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="share-button weibo">
+            <i class="fab fa-weibo"></i>
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" class="share-button twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" class="share-button facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="share-button linkedin">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+</div>
+{{ end }} 

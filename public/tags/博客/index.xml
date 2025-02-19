@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>博客 on 非神的博客</title>
+    <link>http://localhost:56101/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on 非神的博客</description>
+    <generator>Hugo -- 0.144.1</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 19 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:56101/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 博客搭建教程（一）：基础安装与配置</title>
+      <link>http://localhost:56101/posts/hugo-tutorial-1/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56101/posts/hugo-tutorial-1/</guid>
+      <description>从零开始学习如何使用 Hugo 搭建个人博客，包括安装、基本配置和主题选择。</description>
+    </item>
+    <item>
+      <title>Hugo 博客搭建教程（二）：主题定制与功能增强</title>
+      <link>http://localhost:56101/posts/hugo-tutorial-2/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56101/posts/hugo-tutorial-2/</guid>
+      <description>深入了解 Hugo 主题定制，包括评论系统集成、统计分析和性能优化。</description>
+    </item>
+    <item>
+      <title>你好，世界！</title>
+      <link>http://localhost:56101/posts/hello-world/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56101/posts/hello-world/</guid>
+      <description>&lt;h2 id=&#34;欢迎来到我的博客&#34;&gt;欢迎来到我的博客&lt;/h2&gt;
+&lt;p&gt;这是我的第一篇博客文章。在这里，我将会分享：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;技术心得&lt;/li&gt;
+&lt;li&gt;学习笔记&lt;/li&gt;
+&lt;li&gt;生活感悟&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;为什么要写博客&#34;&gt;为什么要写博客？&lt;/h3&gt;
+&lt;p&gt;写博客可以帮助我：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;整理思路&lt;/li&gt;
+&lt;li&gt;分享知识&lt;/li&gt;
+&lt;li&gt;记录成长&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;未来的计划&#34;&gt;未来的计划&lt;/h3&gt;
+&lt;p&gt;我计划定期更新以下主题的内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;编程技术&lt;/li&gt;
+&lt;li&gt;开源项目&lt;/li&gt;
+&lt;li&gt;读书笔记&lt;/li&gt;
+&lt;li&gt;生活随笔&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;欢迎大家关注和交流！&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;fmt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

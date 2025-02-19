@@ -1,0 +1,51 @@
+/* 目录自动编号 */
+.toc {
+    counter-reset: toc;
+}
+
+.toc li::before {
+    counter-increment: toc;
+    content: counters(toc, ".") ". ";
+}
+
+/* 阅读进度条 */
+.progress-bar {
+    background: linear-gradient(to right, var(--theme) var(--scroll), transparent 0);
+    position: fixed;
+    width: 100%;
+    height: 4px;
+    top: 0;
+    z-index: 100;
+}
+
+/* 文章热度样式 */
+.post-meta .post-heat {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+.post-meta .post-heat i {
+    color: #ff6b6b;
+}
+
+/* 分享按钮样式 */
+.share-buttons {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.share-button {
+    background: var(--primary);
+    color: var(--theme);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.share-button:hover {
+    opacity: 0.8;
+} 

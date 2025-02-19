@@ -1,0 +1,253 @@
+baseURL = 'https://lzban8.github.io/'
+languageCode = 'zh-cn'
+title = '非神的博客'
+theme = 'PaperMod'
+
+# 启用 Emoji 支持
+enableEmoji = true
+
+# 启用 Git info
+enableGitInfo = true
+
+[params]
+# 网站描述
+description = "分享技术与生活"
+author = "非神"
+
+# 默认主题模式
+defaultTheme = "auto"
+
+# 显示分享按钮
+ShowShareButtons = true
+
+# 显示阅读时间
+ShowReadingTime = true
+
+# 显示目录
+ShowToc = true
+
+# 自动展开目录
+TocOpen = true
+
+# 显示文章字数统计
+ShowWordCount = true
+
+# 显示代码复制按钮
+ShowCodeCopyButtons = true
+
+# 显示面包屑导航
+ShowBreadCrumbs = true
+
+# 显示文章导航
+ShowPostNavLinks = true
+
+# 评论系统配置 (使用 Giscus)
+[params.comments]
+enabled = true
+provider = "giscus"
+
+[params.giscus]
+repo = "lzban8/lzban8.github.io"
+repoID = "R_kgDON8IcYg"
+category = "Announcements"
+categoryID = "DIC_kwDON8IcYs4CnHIW"
+mapping = "url"
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+theme = "preferred_color_scheme"
+lang = "zh-CN"
+
+# 统计配置 (使用 Google Analytics)
+[params.analytics]
+enabled = true
+provider = "google"
+googleAnalytics = "G-M4WL0FRHB8"
+
+# 社交链接
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/lzban8"
+
+# 主菜单配置
+[[menu.main]]
+identifier = "categories"
+name = "分类"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 30
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 40
+
+[[menu.main]]
+identifier = "rss"
+name = "RSS"
+url = "/index.xml"
+weight = 50
+
+[[menu.main]]
+identifier = "series"
+name = "系列"
+url = "/series/"
+weight = 35
+
+# 搜索功能
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# 搜索功能配置
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+# 首页配置
+[params.profileMode]
+enabled = true
+title = "非神的博客"
+subtitle = "分享技术与生活的个人空间"
+imageUrl = "/images/profile.jpg"
+imageTitle = "个人头像"
+
+[[params.profileMode.buttons]]
+name = "文章"
+url = "posts"
+
+[[params.profileMode.buttons]]
+name = "标签"
+url = "tags"
+
+[[params.profileMode.buttons]]
+name = "分类"
+url = "categories"
+
+# 主页信息
+[params.homeInfoParams]
+Title = "你好 👋"
+Content = """
+欢迎来到我的博客！这里是我记录学习、分享知识的地方。
+
+- 💻 技术博客
+- 📚 学习笔记
+- 🎨 生活随笔
+"""
+
+# 页脚配置
+[params.footer]
+since = 2024
+customText = "分享技术，记录生活"
+
+[[menu.footer]]
+name = "隐私政策"
+url = "/privacy/"
+weight = 10
+
+# SEO 配置
+keywords = ["博客", "技术", "编程", "生活"]
+images = ["/images/profile.jpg"]
+
+# OpenGraph 配置
+[params.opengraph]
+enable = true
+locale = "zh_CN"
+
+# Twitter Card 配置
+[params.twitter]
+creator = "@lzban8"
+site = "@lzban8"
+card = "summary_large_image"
+
+# Schema.org 配置
+[params.schema]
+type = "Person"
+name = "非神"
+description = "分享技术与生活的个人博客"
+sameAs = ["https://github.com/lzban8"]
+
+# 站点地图配置
+enableRobotsTXT = true
+
+# RSS 配置
+[services.rss]
+limit = 20
+
+# 文章设置
+[params.article]
+# 显示面包屑
+showBreadcrumbs = true
+# 显示目录
+showToc = true
+# 显示阅读时间
+showReadingTime = true
+# 显示字数统计
+showWordCount = true
+# 显示作者
+showAuthor = true
+# 显示日期
+showDate = true
+# 显示最后修改时间
+showDateUpdated = true
+# 显示系列文章导航
+showSeriesNavigation = true
+# 显示系列文章列表
+showSeriesList = true
+# 显示相关文章
+showRelatedContent = true
+# 相关文章数量
+relatedContentLimit = 3
+
+# 系列文章设置
+[params.series]
+# 在文章底部显示同系列文章
+showSeriesInPost = true
+# 在系列列表中显示文章数量
+showCount = true
+# 系列文章排序方式 (date, title, weight)
+orderBy = "weight"
+# 显示系列描述
+showDescription = true
+
+# 新增分享配置
+[params.share]
+enable = true
+
+# 新增热度配置
+showHeat = true
+
+# 新增进度配置
+showProgress = true
+
+# 启用 HTTPS
+[security]
+enableInlineShortcodes = true
+
+[server]
+[[server.headers]]
+for = "/*"
+[server.headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+X-XSS-Protection = "1; mode=block"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.cloudflare.com *.giscus.app; style-src 'self' 'unsafe-inline' *.cloudflare.com; img-src 'self' data: *.cloudflare.com; font-src 'self' data: *.cloudflare.com; connect-src 'self' *.cloudflare.com; frame-src 'self' *.giscus.app;"
