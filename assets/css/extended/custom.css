@@ -48,4 +48,37 @@
 
 .share-button:hover {
     opacity: 0.8;
+}
+
+/* 延迟加载图片样式 */
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
+
+/* 字体加载优化 */
+.fonts-loaded body {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 性能优化相关样式 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* 图片优化 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 } 

@@ -5,20 +5,32 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://giscus.app https://*.cloudflare.com; style-src 'self' 'unsafe-inline' https://*.cloudflare.com; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://giscus.app; object-src 'none'
-  Cache-Control: public, max-age=31536000
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://giscus.app https://*.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://*.cloudflare.com; img-src 'self' data: https: https://www.google-analytics.com; font-src 'self' data: https:; connect-src 'self' https: https://www.google-analytics.com; frame-src 'self' https://giscus.app; object-src 'none'
 
-/*.html
-  Cache-Control: public, max-age=0, must-revalidate
-
-/page-data/*
-  Cache-Control: public, max-age=0, must-revalidate
-
-/static/*
-  Cache-Control: public, max-age=31536000, immutable
-
-/icons/*
-  Cache-Control: public, max-age=31536000, immutable
-
+# 静态资源缓存策略
 /images/*
-  Cache-Control: public, max-age=31536000, immutable 
+  Cache-Control: public, max-age=31536000, immutable
+  
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+  
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML 页面缓存策略
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# RSS 和 Sitemap 缓存策略
+/index.xml
+  Cache-Control: public, max-age=1800, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=1800, must-revalidate
+
+# JSON 数据缓存策略
+/*.json
+  Cache-Control: public, max-age=1800, must-revalidate 
