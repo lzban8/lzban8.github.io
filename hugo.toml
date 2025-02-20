@@ -131,15 +131,15 @@ imageTitle = "个人头像"
 
 [[params.profileMode.buttons]]
 name = "文章"
-url = "posts"
+url = "/posts/"
 
 [[params.profileMode.buttons]]
 name = "标签"
-url = "tags"
+url = "/tags/"
 
 [[params.profileMode.buttons]]
 name = "分类"
-url = "categories"
+url = "/categories/"
 
 # 主页信息
 [params.homeInfoParams]
